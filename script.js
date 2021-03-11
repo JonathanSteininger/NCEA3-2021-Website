@@ -51,16 +51,19 @@
          home("open");
          shop("close");
          cart("close");
+         window.scrollTo(0, 0);
      }
      if (x == 'shop') {
          home("close");
          shop("open");
          cart("close");
+         window.scrollTo(0, 0);
      }
      if (x == 'cart') {
          home("close");
          shop("close");
          cart("open");
+         window.scrollTo(0, 0);
      }
  }
  var cartOpen = false;
@@ -93,64 +96,64 @@
  }
 
  var pens = [
-        ['img/pens/pen0.jpg', "Black uni-ball Pen"],
-        ['img/pens/pen1.jpg', 'black ball pen'],
-        ['img/pens/pen2.jpg', 'blue ball pen'],
-        ['img/pens/pen3.jpg', 'blue uni-ball pen'],
-        ['img/pens/pen4.jpg', 'fountain pen'],
-        ['img/pens/pen5.jpg', 'uni+fine black pen bundle'],
-        ['img/pens/pen6.jpg', 'black pen bundle']
+        ['img/pens/pen0.jpg', "Black uni-ball Pen 5NZD$"],
+        ['img/pens/pen1.jpg', 'black ball pen 4NZD$'],
+        ['img/pens/pen2.jpg', 'blue ball pen 2NZD$'],
+        ['img/pens/pen3.jpg', 'blue uni-ball pen 5NZD$'],
+        ['img/pens/pen4.jpg', 'fountain pen 5NZD$'],
+        ['img/pens/pen5.jpg', 'uni+fine black pen bundle 6NZD$'],
+        ['img/pens/pen6.jpg', 'black pen bundle 6NZD$']
     ]; // [src, name]
  var artBoards = [
-        ['img/artBoards/canvas-plain.jpg', 'Small Canvas'],
-        ['img/artBoards/canvas-bundle.jpg', 'Small Canvas Bundle'],
-        ['img/artBoards/canvas-medium-portrait.jpg', 'Medium Canvas'],
-        ['img/artBoards/canvas-smol.jpeg', 'Small Canvas Stand'],
-        ['img/artBoards/canvas-stand.jpg', 'large Canvas Stand']
+        ['img/artBoards/canvas-plain.jpg', 'Small Canvas 10NZD$'],
+        ['img/artBoards/canvas-bundle.jpg', 'Small Canvas Bundle 45NZD$'],
+        ['img/artBoards/canvas-medium-portrait.jpg', 'Medium Canvas 15NZD$'],
+        ['img/artBoards/canvas-smol.jpeg', 'Small Canvas Stand 5NZD$'],
+        ['img/artBoards/canvas-stand.jpg', 'large Canvas Stand 80NZD$']
     ]; //
  var paints = [
-        ['img/paint/black.jpg', 'Black Paint'],
-        ['img/paint/white.jpg', 'White Paint'],
-        ['img/paint/blue.jpg', 'Blue Paint'],
-        ['img/paint/brown.jpg', 'Brown Paint'],
-        ['img/paint/green.jpg', 'Green Paint'],
-        ['img/paint/orange.jpg', 'Orange Paint'],
-        ['img/paint/purple.jpg', 'Purple Paint'],
-        ['img/paint/red.jpg', 'Red Paint'],
-        ['img/paint/yellow.jpg', 'Yellow Paint']
+        ['img/paint/black.jpg', 'Black Paint 9NZD$'],
+        ['img/paint/white.jpg', 'White Paint 9NZD$'],
+        ['img/paint/blue.jpg', 'Blue Paint 7NZD$'],
+        ['img/paint/brown.jpg', 'Brown Paint 7NZD$'],
+        ['img/paint/green.jpg', 'Green Paint 7NZD$'],
+        ['img/paint/orange.jpg', 'Orange Paint 7NZD$'],
+        ['img/paint/purple.jpg', 'Purple Paint 7NZD$'],
+        ['img/paint/red.jpg', 'Red Paint 7NZD$'],
+        ['img/paint/yellow.jpg', 'Yellow Paint 7NZD$']
     ]; //
  var books = [
-        ['img/books/leaf-english.jpg', 'Loose Leaf Refill'],
-        ['img/books/line-smol.jpg', 'Rulerd line Book'],
-        ['img/books/note-very-smol.jpg', 'Notebook'],
-        ['img/books/math-smol.jpg', 'Square Math Book'],
-        ['img/books/graph-smol.jpg', 'Graph Book'],
-        ['img/books/blank-smol.jpg', 'Blank Book'],
-        ['img/books/binder.jpg', 'Ring Binder'],
-        ['img/books/divider.jpg', 'Binder Dividers']
+        ['img/books/leaf-english.jpg', 'Loose Leaf Refill 10NZD$'],
+        ['img/books/line-smol.jpg', 'Rulerd line Book 10NZD$'],
+        ['img/books/note-very-smol.jpg', 'Notebook 8NZD$'],
+        ['img/books/math-smol.jpg', 'Square Math Book 10NZD$'],
+        ['img/books/graph-smol.jpg', 'Graph Book 11NZD$'],
+        ['img/books/blank-smol.jpg', 'Blank Book 8NZD$'],
+        ['img/books/binder.jpg', 'Ring Binder 15NZD$'],
+        ['img/books/divider.jpg', 'Binder Dividers 4NZD$']
     ]; //
  var pencils = [
-        ['img/pencils/all-hardness-pencils.jpg', 'All Pencils'],
-        ['img/pencils/pencil-lead.jpg', 'HP Pencils'],
-        ['img/pencils/pencil-box-large.jpg', 'Large HP Pencils'],
-        ['img/pencils/colour-pencil-expert.jpg', 'Large Colouring Pencil Box'],
-        ['img/pencils/colour-pencil-box.jpg', 'Small Colouring Pencil Box'],
-        ['img/pencils/eraser-plain.jpg', 'Eraser'],
-        ['img/pencils/eraser-eco.jpg', 'Eco Eraser'],
-        ['img/pencils/eraser-box.jpg', 'Eraser Box'],
-        ['img/pencils/eraser-attached.jpg', 'attachable Erasers']
+        ['img/pencils/all-hardness-pencils.jpg', 'All Pencils 20NZD$'],
+        ['img/pencils/pencil-lead.jpg', 'HP Pencils 5NZD$'],
+        ['img/pencils/pencil-box-large.jpg', 'Large HP Pencils 30NZD$'],
+        ['img/pencils/colour-pencil-expert.jpg', 'Large Colouring Pencil Box 15NZD$'],
+        ['img/pencils/colour-pencil-box.jpg', 'Small Colouring Pencil Box 7NZD$'],
+        ['img/pencils/eraser-plain.jpg', 'Eraser 2NZD$'],
+        ['img/pencils/eraser-eco.jpg', 'Eco Eraser 3NZD$'],
+        ['img/pencils/eraser-box.jpg', 'Eraser Box 15NZD$'],
+        ['img/pencils/eraser-attached.jpg', 'attachable Erasers 5NZD$']
     ]; //
  var other = [
-        ['img/other/calculator.jpg', 'Calculator'],
-        ['img/other/glue.jpg', 'Glue'],
-        ['img/other/glue-stick.jpg', 'Glue Stick'],
-        ['img/other/highlighter.jpeg', 'Highlighter'],
-        ['img/other/paperclips.png', 'Paperclips'],
-        ['img/other/ruler.jpg', 'Ruler Set'],
-        ['img/other/ruler-large.jpg', 'Large Ruler'],
-        ['img/other/scissor.jpg', 'Scissor'],
-        ['img/other/sharpener.jpg', 'Sharpener'],
-        ['img/other/stapler.jpg', 'Stapler']
+        ['img/other/calculator.jpg', 'Calculator 30NZD$'],
+        ['img/other/glue.jpg', 'Glue 15NZD$'],
+        ['img/other/glue-stick.jpg', 'Glue Stick 5NZD$'],
+        ['img/other/highlighter.jpeg', 'Highlighter 10NZD$'],
+        ['img/other/paperclips.png', 'Paperclips 5NZD$'],
+        ['img/other/ruler.jpg', 'Ruler Set 10NZD$'],
+        ['img/other/ruler-large.jpg', 'Large Ruler 5NZD$'],
+        ['img/other/scissor.jpg', 'Scissor 10NZD$'],
+        ['img/other/sharpener.jpg', 'Sharpener 5NZD$'],
+        ['img/other/stapler.jpg', 'Stapler 20NZD$']
     ]; //
 
  var cartItems = [];
@@ -161,6 +164,7 @@
      cart("close");
      home("close");
      buttonHighlight(true,"shopbutton");
+     window.scrollTo(0, 0);
 
      for (let i = 0; i < item.length; i++) {
          let insert = '<div class="item" id="item' + i + '"> <img src="' + item[i][0] + '" id="img' + i + '"> <h3>' + item[i][1] + '</h3> <h5 onclick="additem(' + x + "[" + i + "]" + ')">add to cart</h5> </div>';
@@ -241,6 +245,7 @@
          document.getElementById('catagory-tab').style.height = "30vh";
          document.getElementById('catagory-tab').style.overflowY = "scroll";
          document.getElementById('catagory-tab').style.borderBottom = "solid black 2px";
+         document.getElementById('catagory-tab').scrollTo(0, 0);;
          setTimeout(() => {
              catagoryOpen = true;
          }, 1000); //dope
