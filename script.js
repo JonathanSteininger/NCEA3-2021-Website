@@ -81,10 +81,10 @@
  }
 
  function loadCartItems() {
-     document.getElementById('cart-container').innerHTML = '';
+     document.getElementById('cart-container').innerHTML = '<h1 style="font-size:4vw; ">Cart</h1>';
      document.getElementById('cart-container').style.gridTemplateRows = 'repeat(' + cartItems.length + ',10vw) auto';
      for (let iii = 0; iii < cartItems.length; iii++) {
-         let insert = '<div class="row-container" id="cartitem' + iii + '"> <img src="' + cartItems[iii][0] + '" id="img' + iii + '"> <h3>' + cartItems[iii][1] + '</h3> <h5 onclick="removeItem(' + iii + ')">remove</h5> </div>';
+         let insert = '<div class="row-container" id="cartitem' + iii + '"> <img src="' + cartItems[iii][0] + '" id="img' + iii + '"> <h3>' + cartItems[iii][1] + '</h3> <h5 onclick="removeItem(' + iii + ')" class="removeButton">remove</h5> </div>';
          document.getElementById('cart-container').innerHTML += insert;
      }
  }
@@ -159,7 +159,7 @@
  var cartItems = [];
 
  function itemSelect(item, x) {
-     document.getElementById('items-container').innerHTML = '';
+     document.getElementById('items-container').innerHTML = '<h1>Shop</h1>';
      document.getElementById('items-container').style.height = 'auto';
      cart("close");
      home("close");

@@ -1,5 +1,6 @@
 html {
     background-color: rgb(255, 240, 230, 1);
+    overflow-y: scroll;
 }
 
 nav {
@@ -143,12 +144,12 @@ body {
     width: 5vw;
 }
 
-h2 {
+.catagory-tab-button {
     margin: 0;
     font-size: 3vw;
 }
 
-h2:hover {
+.catagory-tab-button:hover {
     font-size: 3.5vw;
 }
 
@@ -189,7 +190,7 @@ h2:hover {
     grid-template-rows: repeat(auto, auto);
     justify-items: center;
     align-items: center;
-    margin: 5vw 5vw;
+    margin: 0 5vw 5vw 5vw;
     overflow: hidden;
     height: 0;
 
@@ -246,7 +247,7 @@ h2:hover {
     grid-template-rows: repeat(auto, 10vw);
     justify-items: center;
     align-items: top;
-    margin: 5vw 5vw;
+    margin: 0 5vw 5vw 5vw;
     height: 0;
     min-height: 0;
     overflow: hidden;
@@ -284,4 +285,17 @@ h2:hover {
     background-color: grey;
     border: solid rgb(50, 50, 50, 1) 0.7vw;
     overflow: hidden;
+    display: grid;
+    grid-template-rows: repeat(auto,auto);
+}
+.removeButton:hover{
+    background-color: white;
+}
+h1{
+    font-size:4vw; 
+    grid-column: 1 / -1;
+}
+.homeheading{
+    color: white;
+    
 }
