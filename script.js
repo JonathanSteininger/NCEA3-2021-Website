@@ -2,6 +2,27 @@
      home('open');
  }
 
+     var cartDisplayArray = [];
+ function simplifyCart(){
+     cartItems.sort();
+     let tempitem = cartItems[0];
+     let counter = 1;
+     for(let i = 0; i < cartItems.length ; i++){
+         if(tempitem == cartItems[i]){
+             counter++;
+         }else{
+             cartDisplayArray.push([tempitem, counter]);
+             tempitem = cartItems[i];
+             counter = 1;
+         }
+     }
+     cartDisplayArray.sort(function(a, b) {
+  return a[0][1] - b[0][1];
+});
+ }
+ 
+ 
+ 
  function buttonHighlight(open, button) {
      if (open) {
          document.getElementById(button).style.backgroundColor = 'black';
@@ -81,10 +102,11 @@
  }
 
  function loadCartItems() {
+     simplifyCart();
      document.getElementById('cart-container').innerHTML = '<h1 style="font-size:4vw; ">Cart</h1>';
      document.getElementById('cart-container').style.gridTemplateRows = 'repeat(' + cartItems.length + ',10vw) auto';
-     for (let iii = 0; iii < cartItems.length; iii++) {
-         let insert = '<div class="row-container" id="cartitem' + iii + '"> <img src="' + cartItems[iii][0] + '" id="img' + iii + '"> <h3>' + cartItems[iii][1] + '</h3> <h5 onclick="removeItem(' + iii + ')" class="removeButton">remove</h5> </div>';
+     for (let iii = 0; iii < cartDisplayArray.length; iii++) {
+         let insert = '<div class="row-container" id="cartitem' + iii + '"> <img src="' + cartDisplayArray[iii][0][0] + '" id="img' + iii + '"> <h3>' + cartDisplayArray[iii][0][1] + '</h3> <h5 onclick="removeItem(' + iii + ')" class="removeButton">remove</h5> <h3>X '+ cartDisplayArray[iii][1] +' </h3> </div>';
          document.getElementById('cart-container').innerHTML += insert;
      }
  }
@@ -94,6 +116,9 @@
      cartItems = cartItems.filter(word => word != 'empty');
      loadCartItems();
  }
+
+
+
 
  var pens = [
         ['img/pens/pen0.jpg', "Black uni-ball Pen 5NZD$"],
@@ -248,7 +273,7 @@
          document.getElementById('catagory-tab').scrollTo(0, 0);;
          setTimeout(() => {
              catagoryOpen = true;
-         }, 1000); //dope
+         }, 300); //dope
      } else {
          catagoryOpen = false;
          document.getElementById('catagory-tab').style.height = "0";
