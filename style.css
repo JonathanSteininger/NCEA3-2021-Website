@@ -21,6 +21,7 @@ nav {
     padding: 0 1vw;
     background-color: none;
     border-radius: 1vw;
+    font-family: mainFont;
 }
 
 .nav-grid a:hover {
@@ -40,6 +41,7 @@ nav {
 }
 
 .contacts {
+    font-family: contactFont;
     position: absolute;
     width: 14.5vw;
     height: 30vw;
@@ -49,7 +51,7 @@ nav {
     grid-template-columns: repeat(2, auto);
     align-items: center;
     padding-left: 0.5vw;
-    background-image: linear-gradient(rgb(50, 50, 50, 1), rgb(65, 65, 65, 1))
+    background-image: linear-gradient(rgb(50, 50, 50, 1), rgb(65, 65, 65, 1));
 }
 
 .contacts img {
@@ -137,6 +139,7 @@ body {
     align-items: center;
     justify-items: center;
     height: 9vw;
+    font-family: mainFont;
 }
 
 .sub-nav img {
@@ -167,7 +170,7 @@ body {
     border-bottom: none;
     z-index: 1;
     transition: height 0.5s;
-
+    font-family: subFont;
 }
 
 #catagory-tab p {
@@ -196,6 +199,7 @@ body {
     margin: 0 5vw 5vw 5vw;
     overflow: hidden;
     height: 0;
+    font-family: itemFont;
 
 }
 
@@ -254,6 +258,7 @@ body {
     height: 0;
     min-height: 0;
     overflow: hidden;
+    font-family: itemFont;
 }
 
 .row-container {
@@ -295,8 +300,8 @@ body {
 
 .removeButton:hover {
     background-color: white;
+    border-radius: 3vw;
 }
-
 h1 {
     font-size: 4vw;
     grid-column: 1 / -1;
@@ -305,10 +310,32 @@ h1 {
 .text-home-a h1 {
     color: black;
     text-align: center;
+    font-family: itemFont;
 }
 
 .text-home-a p {
     margin: 0 5vw;
     text-align: center;
     font-size: 2vw;
+    font-family: subFont;
+}
+
+@font-face {
+    font-family: contactFont;
+    src: url(Fonts/contacts/OpenSansCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url(Fonts/main/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: subFont;
+    src: url(Fonts/main/Ubuntu-light.ttf);
+}
+
+@font-face {
+    font-family: itemFont;
+    src: url(Fonts/main/Hind-Regular.ttf);
 }
