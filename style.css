@@ -24,9 +24,10 @@ nav {
 }
 
 .nav-grid a:hover {
-    transition: font-size 0.1s, margin 0.1s;
+    transition: font-size 0.1s, margin 0.1s, border-radius 0.1s;
     font-size: 3.75vw;
     margin: 6px 0;
+    border-radius: 1.5vw;
 }
 
 .nav-grid {
@@ -35,6 +36,7 @@ nav {
     width: 15vw;
     align-items: center;
     justify-items: center;
+    grid-row-gap: 1vw;
 }
 
 .contacts {
@@ -47,7 +49,7 @@ nav {
     grid-template-columns: repeat(2, auto);
     align-items: center;
     padding-left: 0.5vw;
-    background-image: linear-gradient(rgb(50, 50, 50, 1),rgb(65, 65, 65, 1))
+    background-image: linear-gradient(rgb(50, 50, 50, 1), rgb(65, 65, 65, 1))
 }
 
 .contacts img {
@@ -109,6 +111,7 @@ body {
     grid-column: 1/2;
     position: relative;
 }
+
 .logo2 {
     grid-row: 1 / 10;
     grid-column: 1/2;
@@ -121,7 +124,7 @@ body {
 
 .logo {
     width: 15vw;
-    background-image: linear-gradient(rgb(70, 70, 70, 1),rgb(50, 50, 50, 1))
+    background-image: linear-gradient(rgb(70, 70, 70, 1), rgb(50, 50, 50, 1))
 }
 
 .sub-nav {
@@ -263,6 +266,7 @@ body {
     background-color: grey;
     border: solid rgb(50, 50, 50, 1) 0.7vw;
     max-height: 8vw;
+    text-align: center;
 }
 
 .row-container img {
@@ -286,16 +290,25 @@ body {
     border: solid rgb(50, 50, 50, 1) 0.7vw;
     overflow: hidden;
     display: grid;
-    grid-template-rows: repeat(auto,auto);
+    grid-template-rows: repeat(auto, auto);
 }
-.removeButton:hover{
+
+.removeButton:hover {
     background-color: white;
 }
-h1{
-    font-size:4vw; 
+
+h1 {
+    font-size: 4vw;
     grid-column: 1 / -1;
 }
-.homeheading{
-    color: white;
+
+.text-home-a h1 {
+    color: black;
     text-align: center;
+}
+
+.text-home-a p {
+    margin: 0 5vw;
+    text-align: center;
+    font-size: 2vw;
 }

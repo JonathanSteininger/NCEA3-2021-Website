@@ -1,65 +1,66 @@
  window.onload = function () {
-     home('open');
+     navButton('home');
  }
+
  var pens = [
-        ['img/pens/pen0.jpg', "Black uni-ball Pen 5NZD$", 5],
-        ['img/pens/pen1.jpg', 'black ball pen 4NZD$', 4],
-        ['img/pens/pen2.jpg', 'blue ball pen 2NZD$', 2],
-        ['img/pens/pen3.jpg', 'blue uni-ball pen 5NZD$', 5],
-        ['img/pens/pen4.jpg', 'fountain pen 5NZD$', 5],
-        ['img/pens/pen5.jpg', 'uni+fine black pen bundle 6NZD$', 6],
-        ['img/pens/pen6.jpg', 'black pen bundle 6NZD$', 6]
+        ['img/pens/pen0.jpg', "Black uni-ball Pen 5NZ$", 5],
+        ['img/pens/pen1.jpg', 'Black ball pen 4NZ$', 4],
+        ['img/pens/pen2.jpg', 'Blue ball pen 2NZ$', 2],
+        ['img/pens/pen3.jpg', 'Blue uni-ball pen 5NZ$', 5],
+        ['img/pens/pen4.jpg', 'Fountain pen 5NZ$', 5],
+        ['img/pens/pen5.jpg', 'Uni+fine black pen bundle 6NZ$', 6],
+        ['img/pens/pen6.jpg', 'Black pen bundle 6NZ$', 6]
     ]; // [src, name]
  var artBoards = [
-        ['img/artBoards/canvas-plain.jpg', 'Small Canvas 10NZD$', 10],
-        ['img/artBoards/canvas-bundle.jpg', 'Small Canvas Bundle 45NZD$', 4],
-        ['img/artBoards/canvas-medium-portrait.jpg', 'Medium Canvas 15NZD$', 15],
-        ['img/artBoards/canvas-smol.jpeg', 'Small Canvas Stand 5NZD$', 5],
-        ['img/artBoards/canvas-stand.jpg', 'large Canvas Stand 80NZD$', 80]
+        ['img/artBoards/canvas-plain.jpg', 'Small Canvas 10NZ$', 10],
+        ['img/artBoards/canvas-bundle.jpg', 'Small Canvas Bundle 45NZ$', 4],
+        ['img/artBoards/canvas-medium-portrait.jpg', 'Medium Canvas 15NZ$', 15],
+        ['img/artBoards/canvas-smol.jpeg', 'Small Canvas Stand 5NZ$', 5],
+        ['img/artBoards/canvas-stand.jpg', 'large Canvas Stand 80NZ$', 80]
     ]; //
  var paints = [
-        ['img/paint/black.jpg', 'Black Paint 9NZD$', 9],
-        ['img/paint/white.jpg', 'White Paint 9NZD$', 9],
-        ['img/paint/blue.jpg', 'Blue Paint 7NZD$', 7],
-        ['img/paint/brown.jpg', 'Brown Paint 7NZD$', 7],
-        ['img/paint/green.jpg', 'Green Paint 7NZD$', 7],
-        ['img/paint/orange.jpg', 'Orange Paint 7NZD$', 7],
-        ['img/paint/purple.jpg', 'Purple Paint 7NZD$', 7],
-        ['img/paint/red.jpg', 'Red Paint 7NZD$', 7],
-        ['img/paint/yellow.jpg', 'Yellow Paint 7NZD$', 7]
+        ['img/paint/black.jpg', 'Black Paint 9NZ$', 9],
+        ['img/paint/white.jpg', 'White Paint 9NZ$', 9],
+        ['img/paint/blue.jpg', 'Blue Paint 7NZ$', 7],
+        ['img/paint/brown.jpg', 'Brown Paint 7NZ$', 7],
+        ['img/paint/green.jpg', 'Green Paint 7NZ$', 7],
+        ['img/paint/orange.jpg', 'Orange Paint 7NZ$', 7],
+        ['img/paint/purple.jpg', 'Purple Paint 7NZ$', 7],
+        ['img/paint/red.jpg', 'Red Paint 7NZ$', 7],
+        ['img/paint/yellow.jpg', 'Yellow Paint 7NZ$', 7]
     ]; //
  var books = [
-        ['img/books/leaf-english.jpg', 'Loose Leaf Refill 10NZD$', 10],
-        ['img/books/line-smol.jpg', 'Rulerd line Book 10NZD$', 10],
-        ['img/books/note-very-smol.jpg', 'Notebook 8NZD$', 8],
-        ['img/books/math-smol.jpg', 'Square Math Book 10NZD$', 10],
-        ['img/books/graph-smol.jpg', 'Graph Book 11NZD$', 11],
-        ['img/books/blank-smol.jpg', 'Blank Book 8NZD$', 8],
-        ['img/books/binder.jpg', 'Ring Binder 15NZD$', 15],
-        ['img/books/divider.jpg', 'Binder Dividers 4NZD$', 4]
+        ['img/books/leaf-english.jpg', 'Loose Leaf Refill 10NZ$', 10],
+        ['img/books/line-smol.jpg', 'Rulerd line Book 10NZ$', 10],
+        ['img/books/note-very-smol.jpg', 'Notebook 8NZ$', 8],
+        ['img/books/math-smol.jpg', 'Square Math Book 10NZ$', 10],
+        ['img/books/graph-smol.jpg', 'Graph Book 11NZ$', 11],
+        ['img/books/blank-smol.jpg', 'Blank Book 8NZ$', 8],
+        ['img/books/binder.jpg', 'Ring Binder 15NZ$', 15],
+        ['img/books/divider.jpg', 'Binder Dividers 4NZ$', 4]
     ]; //
  var pencils = [
-        ['img/pencils/all-hardness-pencils.jpg', 'All Pencils 20NZD$', 20],
-        ['img/pencils/pencil-lead.jpg', 'HP Pencils 5NZD$', 5],
-        ['img/pencils/pencil-box-large.jpg', 'Large HP Pencils 30NZD$', 30],
-        ['img/pencils/colour-pencil-expert.jpg', 'Large Colouring Pencil Box 15NZD$', 15],
-        ['img/pencils/colour-pencil-box.jpg', 'Small Colouring Pencil Box 7NZD$', 7],
-        ['img/pencils/eraser-plain.jpg', 'Eraser 2NZD$', 2],
-        ['img/pencils/eraser-eco.jpg', 'Eco Eraser 3NZD$', 3],
-        ['img/pencils/eraser-box.jpg', 'Eraser Box 15NZD$', 15],
-        ['img/pencils/eraser-attached.jpg', 'attachable Erasers 5NZD$', 5]
+        ['img/pencils/all-hardness-pencils.jpg', 'All Pencils 20NZ$', 20],
+        ['img/pencils/pencil-lead.jpg', 'HP Pencils 5NZ$', 5],
+        ['img/pencils/pencil-box-large.jpg', 'Large HP Pencils 30NZ$', 30],
+        ['img/pencils/colour-pencil-expert.jpg', 'Large Colouring Pencil Box 15NZ$', 15],
+        ['img/pencils/colour-pencil-box.jpg', 'Small Colouring Pencil Box 7NZ$', 7],
+        ['img/pencils/eraser-plain.jpg', 'Eraser 2NZ$', 2],
+        ['img/pencils/eraser-eco.jpg', 'Eco Eraser 3NZ$', 3],
+        ['img/pencils/eraser-box.jpg', 'Eraser Box 15NZ$', 15],
+        ['img/pencils/eraser-attached.jpg', 'attachable Erasers 5NZ$', 5]
     ]; //
  var other = [
-        ['img/other/calculator.jpg', 'Calculator 30NZD$', 30],
-        ['img/other/glue.jpg', 'Glue 15NZD$', 15],
-        ['img/other/glue-stick.jpg', 'Glue Stick 5NZD$', 5],
-        ['img/other/highlighter.jpeg', 'Highlighter 10NZD$', 10],
-        ['img/other/paperclips.png', 'Paperclips 5NZD$', 5],
-        ['img/other/ruler.jpg', 'Ruler Set 10NZD$', 10],
-        ['img/other/ruler-large.jpg', 'Large Ruler 5NZD$', 5],
-        ['img/other/scissor.jpg', 'Scissor 10NZD$', 10],
-        ['img/other/sharpener.jpg', 'Sharpener 5NZD$', 5],
-        ['img/other/stapler.jpg', 'Stapler 20NZD$', 20]
+        ['img/other/calculator.jpg', 'Calculator 30NZ$', 30],
+        ['img/other/glue.jpg', 'Glue 15NZ$', 15],
+        ['img/other/glue-stick.jpg', 'Glue Stick 5NZ$', 5],
+        ['img/other/highlighter.jpeg', 'Highlighter 10NZ$', 10],
+        ['img/other/paperclips.png', 'Paperclips 5NZ$', 5],
+        ['img/other/ruler.jpg', 'Ruler Set 10NZ$', 10],
+        ['img/other/ruler-large.jpg', 'Large Ruler 5NZ$', 5],
+        ['img/other/scissor.jpg', 'Scissor 10NZ$', 10],
+        ['img/other/sharpener.jpg', 'Sharpener 5NZ$', 5],
+        ['img/other/stapler.jpg', 'Stapler 20NZ$', 20]
     ]; //
  var cartDisplayArray = [];
  var cartOpen = false;
@@ -67,47 +68,9 @@
  var navopen = true;
  var catagoryOpen = false;
 
- function simplifyCart() {
-     cartItems.sort(function (a, b) {
-         let A = a[1].toUpperCase(); // ignore upper and lowercase
-         let B = b[1].toUpperCase(); // ignore upper and lowercase
-         if (A < B) {
-             return -1;
-         }
-         if (A > B) {
-             return 1;
-         }
-         return 0;
-     });
-     cartDisplayArray = [];
-     let tempitem = cartItems[0];
-     let counter = 1;
-     for (let i = 1; i < cartItems.length; i++) {
-         if (tempitem == cartItems[i]) {
-             counter++;
-         } else {
-             cartDisplayArray.push([tempitem, counter]);
-             tempitem = cartItems[i];
-             counter = 1;
-         }
-     }
-     cartDisplayArray.push([tempitem, counter]);
-     cartDisplayArray.sort(function (a, b) {
-         let A = a[0][1].toUpperCase(); // ignore upper and lowercase
-         let B = b[0][1].toUpperCase(); // ignore upper and lowercase
-         if (A < B) {
-             return -1;
-         }
-         if (A > B) {
-             return 1;
-         }
-         return 0;
-     });
- }
-
  function buttonHighlight(open, button) {
      if (open) {
-         document.getElementById(button).style.backgroundColor = 'black';
+         document.getElementById(button).style.backgroundColor = 'rgb(100,100,100,1)';
      } else {
          document.getElementById(button).style.backgroundColor = 'rgb(1,1,1,0)';
      }
@@ -171,7 +134,6 @@
      }
  }
 
-
  function cartDisplay() {
      if (cartOpen) {
          home("close");
@@ -192,12 +154,51 @@
      return s;
  }
 
+ function simplifyCart() {
+     cartItems.sort(function (a, b) {
+         let A = a[1].toUpperCase(); // ignore upper and lowercase
+         let B = b[1].toUpperCase(); // ignore upper and lowercase
+         if (A < B) {
+             return -1;
+         }
+         if (A > B) {
+             return 1;
+         }
+         return 0;
+     });
+     cartDisplayArray = [];
+     let tempitem = cartItems[0];
+     let counter = 1;
+     for (let i = 1; i < cartItems.length; i++) {
+         if (tempitem == cartItems[i]) {
+             counter++;
+         } else {
+             cartDisplayArray.push([tempitem, counter]);
+             tempitem = cartItems[i];
+             counter = 1;
+         }
+     }
+     cartDisplayArray.push([tempitem, counter]);
+     cartDisplayArray.sort(function (a, b) {
+         let A = a[0][1].toUpperCase(); // ignore upper and lowercase
+         let B = b[0][1].toUpperCase(); // ignore upper and lowercase
+         if (A < B) {
+             return -1;
+         }
+         if (A > B) {
+             return 1;
+         }
+         return 0;
+     });
+ }
+
  function loadCartItems() {
      simplifyCart();
      if (cartItems.length == 0) {
          document.getElementById('cart-container').innerHTML = '<h1 style="font-size:4vw; ">Cart</h1> <h1 style="font-size:4vw; ">Your cart is empty!</h1>';
+         document.getElementById('cart-container').style.gridTemplateRows = '10vw 10vw auto';
      } else {
-         document.getElementById('cart-container').innerHTML = '<h1 style="font-size:4vw; ">Cart ' + cartSum() + 'nzd$</h1>';
+         document.getElementById('cart-container').innerHTML = '<h1 style="font-size:4vw; ">Cart ' + cartSum() + 'NZ$</h1>';
          document.getElementById('cart-container').style.gridTemplateRows = 'repeat(' + cartDisplayArray.length + ',10vw) auto';
          for (let iii = 0; iii < cartDisplayArray.length; iii++) {
              let insert = '<div class="row-container" id="cartitem' + iii + '"> <img src="' + cartDisplayArray[iii][0][0] + '" id="img' + iii + '"> <h3>' + cartDisplayArray[iii][0][1] + '</h3> <h5 onclick="removeItem(' + "cartDisplayArray[" + iii + "][0]" + ')" class="removeButton">remove</h5> <h3>X ' + cartDisplayArray[iii][1] + ' </h3> </div>';
@@ -219,12 +220,9 @@
          loadCartItems();
      } else {
          document.getElementById('cart-container').innerHTML = '<h1 style="font-size:4vw; ">Cart</h1> <h1 style="font-size:4vw; ">Your cart is empty!</h1>';
+         document.getElementById('cart-container').style.gridTemplateRows = '10vw 10vw auto';
      }
  }
-
-
-
-
 
  function itemSelect(item, x) {
      document.getElementById('items-container').innerHTML = '<h1>Shop</h1>';
@@ -254,8 +252,6 @@
  function additem(x) {
      cartItems.push(x);
  }
-
-
 
  function navtab() {
      if (navopen == true) {
@@ -296,8 +292,6 @@
          }, 500); //dope
      }
  }
-
-
 
  function closetab() {
      if (catagoryOpen == true) {
