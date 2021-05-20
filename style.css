@@ -34,10 +34,11 @@ nav {
 .nav-grid {
     display: grid;
     grid-template-rows: repeat(auto, 1fr) auto;
-    width: 15vw;
+    width: 100%;
     align-items: center;
     justify-items: center;
     grid-row-gap: 1vw;
+    background-image: linear-gradient(rgb(80, 80, 80, 1), rgb(50, 50, 50, 1))
 }
 
 .contacts {
@@ -51,6 +52,7 @@ nav {
     grid-template-columns: repeat(2, auto);
     align-items: center;
     padding-left: 0.5vw;
+    padding-right: calc(100% - 14.5vw);
     background-image: linear-gradient(rgb(50, 50, 50, 1), rgb(65, 65, 65, 1));
 }
 
@@ -81,6 +83,7 @@ body {
     grid-template-rows: 9.9vw repeat(9, auto);
     z-index: 1;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .nav-button {
@@ -126,7 +129,6 @@ body {
 
 .logo {
     width: 15vw;
-    background-image: linear-gradient(rgb(70, 70, 70, 1), rgb(50, 50, 50, 1))
 }
 
 .sub-nav {
@@ -203,22 +205,24 @@ body {
 
 }
 
-.item img {
-    max-width: 30vw;
-    max-height: 20vw;
-}
-
 .item {
-    width: 30vw;
-    background-color: white;
-    border: solid rgb(50, 50, 50, 1) 0.7vw;
-    margin: 0.5vw;
-    justify-items: center;
-    height: 40vw;
-    display: grid;
-    grid-template-rows: auto 4vw auto;
+  width: 30vw;
+  background-color: white;
+  border: solid rgb(50, 50, 50, 1) 0.7vw;
+  margin: 0.5vw;
+  justify-items: center;
+  height: 40vw;
+  display: grid;
+  grid-template-rows: auto 4vw auto;
 }
 
+.item img {
+  max-width: 30vw;
+  max-height: 20vw;
+  margin: none;
+  align-self: center;
+
+}
 .item h3 {
     font-size: 3vw;
     margin: 0 0;
@@ -261,7 +265,8 @@ body {
     font-family: itemFont;
 }
 
-.row-container {
+/* comp */
+.row-container-comp {
     display: grid;
     grid-template-columns: repeat(3, 1fr) 0.5fr;
     grid-template-rows: 1fr;
@@ -273,16 +278,38 @@ body {
     max-height: 8vw;
     text-align: center;
 }
-
-.row-container img {
+.row-container-comp img {
     max-height: 7.7vw;
 }
-
-.row-container h3,
-.row-container h5,
-.row-container img {
+.row-container-comp h3,
+.row-container-comp h5,
+.row-container-comp img {
     margin: 0;
     font-size: 2vw;
+}
+/* mobile */
+.row-container-phone {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 0.5fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 85vw;
+    background-color: grey;
+    border: solid rgb(50, 50, 50, 1) 0.7vw;
+    max-height: 22vw;
+    text-align: center;
+}
+
+.row-container-phone img {
+    max-height: 20vw;
+    max-width: 25vw;
+}
+.row-container-phone h3,
+.row-container-phone h5,
+.row-container-phone img {
+    margin: 0;
+    font-size: 4vw;
 }
 
 .home-container {
